@@ -1,9 +1,12 @@
+Here is the ready-to-publish version with adventure sport photo placeholders built in.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wilderness First Aid Training | CA Preventive Health & Safety</title>
+  <title>Wilderness First Aid Training | Adventure & Outdoor Emergency Readiness</title>
 
   <style>
     :root {
@@ -16,11 +19,7 @@
       --white: #fff;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: Arial, sans-serif;
@@ -33,16 +32,14 @@
       min-height: 90vh;
       background:
         linear-gradient(rgba(18, 32, 22, 0.72), rgba(18, 32, 22, 0.78)),
-        url("wilderness-bg.jpg") center/cover no-repeat;
+        url("https://placehold.co/1600x1000/1f3324/f4f0e7?text=Outdoor+Adventure+Training") center/cover no-repeat;
       color: var(--white);
       display: flex;
       align-items: center;
       padding: 60px 8%;
     }
 
-    .hero {
-      max-width: 900px;
-    }
+    .hero { max-width: 900px; }
 
     .eyebrow {
       color: var(--orange);
@@ -60,7 +57,7 @@
 
     .hero p {
       font-size: 1.25rem;
-      max-width: 750px;
+      max-width: 760px;
       margin-bottom: 32px;
     }
 
@@ -79,24 +76,15 @@
       transition: 0.2s;
     }
 
-    .btn-primary {
-      background: var(--orange);
-      color: var(--white);
-    }
-
-    .btn-secondary {
-      border: 2px solid var(--white);
-      color: var(--white);
-    }
+    .btn-primary { background: var(--orange); color: var(--white); }
+    .btn-secondary { border: 2px solid var(--white); color: var(--white); }
 
     .btn:hover {
       transform: translateY(-2px);
       opacity: 0.9;
     }
 
-    section {
-      padding: 80px 8%;
-    }
+    section { padding: 80px 8%; }
 
     .section-title {
       font-size: clamp(2rem, 4vw, 3rem);
@@ -121,6 +109,22 @@
       padding: 28px;
       border-radius: 18px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+
+    .image-card {
+      padding: 0;
+    }
+
+    .image-card img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .image-card .card-content {
+      padding: 24px;
     }
 
     .card h3 {
@@ -134,9 +138,7 @@
       color: var(--white);
     }
 
-    .highlight .section-title {
-      color: var(--white);
-    }
+    .highlight .section-title { color: var(--white); }
 
     .highlight .card {
       background: rgba(255,255,255,0.08);
@@ -144,22 +146,16 @@
       border: 1px solid rgba(255,255,255,0.18);
     }
 
-    .highlight .card h3 {
-      color: var(--orange);
-    }
+    .highlight .card h3 { color: var(--orange); }
 
-    .details {
-      background: var(--stone);
-    }
+    .details { background: var(--stone); }
 
     ul {
       padding-left: 20px;
       margin-top: 10px;
     }
 
-    li {
-      margin-bottom: 8px;
-    }
+    li { margin-bottom: 8px; }
 
     .cta {
       text-align: center;
@@ -193,9 +189,7 @@
       font-size: 1rem;
     }
 
-    textarea {
-      min-height: 130px;
-    }
+    textarea { min-height: 130px; }
 
     button {
       border: none;
@@ -220,184 +214,264 @@
 
 <body>
 
-  <header>
-    <div class="hero">
-      <div class="eyebrow">Wilderness First Aid • Outdoor Risk Readiness</div>
-      <h1>Train for the moments when help is not close.</h1>
+<header>
+  <div class="hero">
+    <div class="eyebrow">Wilderness First Aid • Outdoor Risk Readiness</div>
+    <h1>Train for the moments when help is not close.</h1>
+    <p>
+      Wilderness First Aid training for people who adventure beyond easy access to help —
+      boaters, surfers, paragliders, hikers, climbers, skiers, riders, paddlers,
+      overlanders, travelers, guides, outdoor clubs, and yes… even the helicopter cricket crowd.
+    </p>
+
+    <div class="buttons">
+      <a href="#register" class="btn btn-primary">Reserve Training</a>
+      <a href="#groups" class="btn btn-secondary">Book a Group Course</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <h2 class="section-title">Real first aid for real adventure.</h2>
+  <p class="intro">
+    This course is built for people who actually go outside — not just people
+    checking a certification box. Whether your crew is chasing waves, flying sites,
+    riding horses, skiing backcountry lines, paddling rivers, climbing rock,
+    camping off-grid, leading trips, or traveling where emergency response may be delayed,
+    Wilderness First Aid gives you the confidence to assess, stabilize, and make smart
+    decisions under pressure.
+  </p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>For Adventure Communities</h3>
       <p>
-        Wilderness First Aid training for boaters, surfers, paragliders, hikers,
-        travelers, guides, outdoor clubs, and adventure groups who need practical
-        emergency skills in remote environments.
+        Ideal for surf crews, boaters, paddlers, paragliders, climbers, skiers,
+        snowboarders, horseback riders, mountain bikers, hikers, overlanders,
+        camp staff, guides, retreat leaders, and adventure-based businesses.
       </p>
+    </div>
 
-      <div class="buttons">
-        <a href="#register" class="btn btn-primary">Reserve Training</a>
-        <a href="#groups" class="btn btn-secondary">Book a Group Course</a>
+    <div class="card">
+      <h3>Scenario-Based Training</h3>
+      <p>
+        Learn through practical emergencies, outdoor problem solving, patient
+        assessment, evacuation thinking, and decision-making when conditions
+        are not perfect.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Built for Remote Settings</h3>
+      <p>
+        Focused on situations where advanced medical care may be delayed,
+        unavailable, or difficult to access due to terrain, water, weather, or travel.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Adventure spaces we train for</h2>
+  <p class="intro">
+    From beaches to backcountry, rivers to ridgelines, ranches to remote roads —
+    the course can be tailored to the actual risks your group faces.
+  </p>
+
+  <div class="grid">
+    <div class="card image-card">
+      <img src="https://placehold.co/800x500/315c74/ffffff?text=Surfing+%26+Coastal+Adventure" alt="Surfing and coastal adventure placeholder">
+      <div class="card-content">
+        <h3>Surfing & Coastal</h3>
+        <p>Beach injuries, marine environments, heat, wounds, water response awareness, and travel planning.</p>
       </div>
     </div>
-  </header>
 
-  <section>
-    <h2 class="section-title">Real first aid for real adventure.</h2>
-    <p class="intro">
-      This course is built for people who actually go outside — not just people
-      checking a certification box. Whether your crew is launching boats,
-      chasing waves, flying sites, camping off-grid, leading trips, or traveling
-      where emergency response may be delayed, Wilderness First Aid gives you
-      the confidence to assess, stabilize, and make smart decisions under pressure.
-    </p>
-
-    <div class="grid">
-      <div class="card">
-        <h3>For Outdoor Communities</h3>
-        <p>
-          Ideal for boating groups, surf crews, paragliding pilots, hiking clubs,
-          overland travelers, camp staff, guides, and adventure-based businesses.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Scenario-Based Training</h3>
-        <p>
-          Learn through practical emergencies, outdoor problem solving, patient
-          assessment, evacuation thinking, and decision-making when conditions
-          are not perfect.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Built for Remote Settings</h3>
-        <p>
-          Focused on situations where advanced medical care may be delayed,
-          unavailable, or difficult to access due to terrain, water, weather, or travel.
-        </p>
+    <div class="card image-card">
+      <img src="https://placehold.co/800x500/24442d/ffffff?text=Boating+%26+Paddling" alt="Boating and paddling placeholder">
+      <div class="card-content">
+        <h3>Boating & Paddling</h3>
+        <p>Remote water access, delayed rescue, weather exposure, river trips, sailing, kayaking, and rafting.</p>
       </div>
     </div>
-  </section>
 
-  <section class="highlight" id="course">
-    <h2 class="section-title">What the course covers</h2>
-
-    <div class="grid">
-      <div class="card">
-        <h3>Emergency Assessment</h3>
-        <p>Scene safety, patient assessment, life threats, communication, and priorities of care.</p>
-      </div>
-
-      <div class="card">
-        <h3>Trauma & Injury Care</h3>
-        <p>Bleeding control, wounds, fractures, sprains, burns, head injuries, and spinal concerns.</p>
-      </div>
-
-      <div class="card">
-        <h3>Environmental Emergencies</h3>
-        <p>Heat illness, hypothermia, dehydration, altitude concerns, bites, stings, and exposure.</p>
-      </div>
-
-      <div class="card">
-        <h3>Evacuation Decisions</h3>
-        <p>When to stay, when to move, how to monitor a patient, and how to communicate with rescuers.</p>
+    <div class="card image-card">
+      <img src="https://placehold.co/800x500/6f8fa8/ffffff?text=Skiing+%26+Snow+Sports" alt="Skiing and snow sports placeholder">
+      <div class="card-content">
+        <h3>Skiing & Snow Sports</h3>
+        <p>Cold exposure, hypothermia, fractures, evacuation choices, and winter backcountry emergencies.</p>
       </div>
     </div>
-  </section>
 
-  <section class="details">
-    <h2 class="section-title">Upcoming Wilderness First Aid Course</h2>
-    <p class="intro">
-      Join us for a 16-hour Wilderness First Aid course designed for outdoor
-      recreation, travel, and group adventure settings.
-    </p>
-
-    <div class="grid">
-      <div class="card">
-        <h3>Course Dates</h3>
-        <p>TBD</p>
-      </div>
-
-      <div class="card">
-        <h3>Location</h3>
-        <p>TBD Private events upon request</p>
-      </div>
-
-
-      <div class="card">
-        <h3>Included</h3>
-        <ul>
-          <li>16 hours of Wilderness First Aid training</li>
-          <li>Course materials</li>
-          <li>Completion certificate</li>
-      
-        </ul>
+    <div class="card image-card">
+      <img src="https://placehold.co/800x500/6f5b3e/ffffff?text=Horseback+Riding+%26+Ranch" alt="Horseback riding and ranch placeholder">
+      <div class="card-content">
+        <h3>Horseback & Ranch</h3>
+        <p>Falls, remote property incidents, ranch crews, trail riding, hunting groups, and rural response planning.</p>
       </div>
     </div>
-  </section>
 
-  <section id="groups">
-    <h2 class="section-title">Book training for your group or trip.</h2>
-    <p class="intro">
-      Planning a surf retreat, boating expedition, paragliding trip, guided
-      adventure, outdoor team training, or travel group? Custom Wilderness First
-      Aid courses can be built around your environment, risks, and activity style.
-    </p>
-
-    <div class="grid">
-      <div class="card">
-        <h3>Boating & Water Groups</h3>
-        <p>Training for delayed rescue, marine environments, drowning response awareness, and remote water access.</p>
+    <div class="card image-card">
+      <img src="https://placehold.co/800x500/3a4b2b/ffffff?text=Hiking+%26+Backpacking" alt="Hiking and backpacking placeholder">
+      <div class="card-content">
+        <h3>Hiking & Backpacking</h3>
+        <p>Trail injuries, dehydration, exposure, navigation issues, group leadership, and emergency communication.</p>
       </div>
+    </div>
 
-      <div class="card">
-        <h3>Surf & Coastal Crews</h3>
-        <p>Practical first aid skills for surf travel, beach injuries, heat exposure, wounds, and emergency planning.</p>
+    <div class="card image-card">
+      <img src="https://placehold.co/800x500/4b5663/ffffff?text=Climbing+%26+Mountain+Sports" alt="Climbing and mountain sports placeholder">
+      <div class="card-content">
+        <h3>Climbing & Mountain Sports</h3>
+        <p>Falls, trauma, head injuries, altitude concerns, splinting, monitoring, and evacuation decision-making.</p>
       </div>
+    </div>
 
-      <div class="card">
+    <div class="card image-card">
+      <img src="https://placehold.co/800x500/40666b/ffffff?text=Paragliding+%26+Air+Sports" alt="Paragliding and air sports placeholder">
+      <div class="card-content">
         <h3>Paragliding & Air Sports</h3>
-        <p>Emergency readiness for landing zones, trauma care, remote access, and incident response coordination.</p>
-      </div>
-
-      <div class="card">
-        <h3>Travel & Adventure Trips</h3>
-        <p>Custom prep for international trips, wilderness travel, outdoor retreats, and group leaders.</p>
+        <p>Landing zone incidents, trauma care, scene coordination, remote access, and emergency planning.</p>
       </div>
     </div>
-  </section>
 
-  <section class="cta" id="register">
-    <h2>Ready before the emergency.</h2>
-    <p>
-      Reserve a seat in the upcoming course or request a custom training for your
-      outdoor group, club, retreat, or adventure business.
-    </p>
+    <div class="card image-card">
+      <img src="https://placehold.co/800x500/7a6a4f/ffffff?text=Overlanding+%26+Travel" alt="Overlanding and travel placeholder">
+      <div class="card-content">
+        <h3>Overlanding & Travel</h3>
+        <p>International trips, vehicle-based adventure, remote roads, group travel, and delayed medical care.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <a class="btn btn-primary" href="mailto:taylor@capreventivehealthandsafety.com">
-      Email to Reserve
-    </a>
+<section class="highlight" id="course">
+  <h2 class="section-title">What the course covers</h2>
 
-    <form action="mailto:taylor@capreventivehealthandsafety.com" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your name" required />
-      <input type="email" name="email" placeholder="Your email" required />
-      <input type="tel" name="phone" placeholder="Phone number" />
-      <select name="interest">
-        <option>Upcoming July 4–6 course</option>
-        <option>Private group training</option>
-        <option>Boating / water group training</option>
-        <option>Surf / coastal group training</option>
-        <option>Paragliding / extreme sports training</option>
-        <option>Travel / wilderness trip training</option>
-      </select>
-      <textarea name="message" placeholder="Tell us about your group, trip, or training needs."></textarea>
-      <button class="btn btn-primary" type="submit">Send Inquiry</button>
-    </form>
-  </section>
+  <div class="grid">
+    <div class="card">
+      <h3>Emergency Assessment</h3>
+      <p>Scene safety, patient assessment, life threats, communication, and priorities of care.</p>
+    </div>
 
-  <footer>
-    <p>
-      CA Preventive Health & Safety |
-      <a href="mailto:taylor@capreventivehealthandsafety.com">taylor@capreventivehealthandsafety.com</a> |
-      (800) 781-4819
-    </p>
-  </footer>
+    <div class="card">
+      <h3>Trauma & Injury Care</h3>
+      <p>Bleeding control, wounds, fractures, sprains, burns, head injuries, and spinal concerns.</p>
+    </div>
+
+    <div class="card">
+      <h3>Environmental Emergencies</h3>
+      <p>Heat illness, hypothermia, dehydration, altitude concerns, bites, stings, and exposure.</p>
+    </div>
+
+    <div class="card">
+      <h3>Evacuation Decisions</h3>
+      <p>When to stay, when to move, how to monitor a patient, and how to communicate with rescuers.</p>
+    </div>
+  </div>
+</section>
+
+<section class="details">
+  <h2 class="section-title">Upcoming Wilderness First Aid Course</h2>
+  <p class="intro">
+    Join us for a 16-hour Wilderness First Aid course designed for outdoor
+    recreation, travel, and group adventure settings.
+  </p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Course Dates</h3>
+      <p>TBD</p>
+    </div>
+
+    <div class="card">
+      <h3>Location</h3>
+      <p>TBD. Private events available upon request.</p>
+    </div>
+
+    <div class="card">
+      <h3>Included</h3>
+      <ul>
+        <li>16 hours of Wilderness First Aid training</li>
+        <li>Course materials</li>
+        <li>Completion certificate</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="groups">
+  <h2 class="section-title">Book training for your group or trip.</h2>
+  <p class="intro">
+    Planning a surf retreat, river trip, ski weekend, horseback expedition,
+    climbing clinic, overland route, paragliding trip, guided adventure,
+    outdoor team training, or travel group? Custom Wilderness First Aid courses
+    can be built around your environment, risks, and activity style.
+  </p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Water, Surf & Paddle Groups</h3>
+      <p>Training for surfers, boaters, kayakers, rafters, sailors, divers, and coastal crews dealing with water access, weather, wounds, heat, and delayed rescue.</p>
+    </div>
+
+    <div class="card">
+      <h3>Mountain, Snow & Trail Sports</h3>
+      <p>Practical emergency skills for skiers, snowboarders, hikers, climbers, backpackers, mountain bikers, trail runners, and backcountry groups.</p>
+    </div>
+
+    <div class="card">
+      <h3>Air Sports & High-Risk Adventure</h3>
+      <p>Emergency readiness for paragliding, hang gliding, skydiving, off-road travel, motorsports, remote landing zones, trauma care, and incident coordination.</p>
+    </div>
+
+    <div class="card">
+      <h3>Equestrian, Ranch & Remote Travel</h3>
+      <p>Custom training for horseback riders, ranch crews, hunting groups, overlanders, expedition travelers, outdoor retreats, and anyone operating far from fast help.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="register">
+  <h2>Ready before the emergency.</h2>
+  <p>
+    Reserve a seat in the upcoming course or request a custom training for your
+    outdoor group, club, retreat, or adventure business.
+  </p>
+
+  <a class="btn btn-primary" href="mailto:taylor@capreventivehealthandsafety.com">
+    Email to Reserve
+  </a>
+
+  <form action="mailto:taylor@capreventivehealthandsafety.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your name" required />
+    <input type="email" name="email" placeholder="Your email" required />
+    <input type="tel" name="phone" placeholder="Phone number" />
+
+    <select name="interest">
+      <option>Upcoming Wilderness First Aid course</option>
+      <option>Private group training</option>
+      <option>Water / surf / paddle group training</option>
+      <option>Mountain / snow / trail sport training</option>
+      <option>Air sport / extreme adventure training</option>
+      <option>Equestrian / ranch / remote travel training</option>
+      <option>Outdoor retreat / guide / club training</option>
+      <option>Helicopter cricket emergency readiness... obviously</option>
+    </select>
+
+    <textarea name="message" placeholder="Tell us about your group, trip, activity, or training needs."></textarea>
+    <button class="btn btn-primary" type="submit">Send Inquiry</button>
+  </form>
+</section>
+
+<footer>
+  <p>
+    CA Preventive Health & Safety |
+    <a href="mailto:taylor@capreventivehealthandsafety.com">taylor@capreventivehealthandsafety.com</a> |
+    (800) 781-4819
+  </p>
+</footer>
 
 </body>
 </html>
+```
